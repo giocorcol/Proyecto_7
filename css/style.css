@@ -43,6 +43,22 @@ body {
 }
 
 
+/*cuerpo del navegacion, contenido del proyecto************************************************************************************ */
+
+#cuerpo
+
+{
+  max-width: 1200px;
+  justify-content: center;
+  margin: 0 auto ;
+
+
+
+
+
+}
+
+
 /*baner principal************************************************************************************ */
 
 #tituloprincipal {
@@ -122,6 +138,14 @@ article {
   table-layout: fixed;
   border-collapse: collapse;
   width: 100%;
+  
+}
+
+.licont
+{
+
+margin: 0 75px;
+
 }
 
 /*pie de pagina***************************************************************************** */
