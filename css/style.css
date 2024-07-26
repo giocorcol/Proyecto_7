@@ -1,24 +1,15 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   /*max-width: 800px; */
   font-family: "Open Sans", sans-serif;
-
- 
-
-
-  
-
 }
 
 /*propiedades del body****************************************************************************** */
 body {
   background-color: #f3e5d8;
-  
-  
 }
 
 /*CABECERA DEL SITIO****************************************************************************** */
@@ -29,35 +20,22 @@ body {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
- 
-  
-
+  position: sticky;;
+  top: 0px;
 }
-
 
 #cab2 {
   color: white;
   font-family: "Kanit", sans-serif;
-
-  
 }
-
 
 /*cuerpo del navegacion, contenido del proyecto************************************************************************************ */
 
-#cuerpo
-
-{
+#cuerpo {
   max-width: 1200px;
   justify-content: center;
-  margin: 0 auto ;
-
-
-
-
-
+  margin: 0 auto;
 }
-
 
 /*baner principal************************************************************************************ */
 
@@ -78,8 +56,7 @@ body {
 
 #nav1 {
   display: flex;
-  justify-content: end;
-
+  justify-content: center
 }
 
 #list1 {
@@ -87,9 +64,8 @@ body {
   padding: 5px;
   border-radius: 8px;
   display: flex;
-  justify-content: flex-end;
   justify-content: space-between;
-  gap: 35px;
+  gap: 10px;
   list-style: none;
 }
 
@@ -138,14 +114,10 @@ article {
   table-layout: fixed;
   border-collapse: collapse;
   width: 100%;
-  
 }
 
-.licont
-{
-
-margin: 0 75px;
-
+.licont {
+  margin: 0 75px;
 }
 
 /*pie de pagina***************************************************************************** */
@@ -165,4 +137,36 @@ margin: 0 75px;
 
 #pie2 {
   color: white;
+}
+
+/*adaptacion a 600 o menos px***************************************************************************** */
+
+@media screen and (max-width: 600px) {
+  /*eliminar titulo principal********************** */
+  #tituloprincipal {
+    display: none;
+  }
+  /*colocar la navegacion en columna y alargar al 100%****** */
+  #list1 {
+    flex-direction: column;
+  }
+  .nav1 a {
+    width: 100%;
+    text-align: center;
+    color: aqua;
+  }
+
+
+
+
+
+  /*colocar la navegacion en columna y alargar al 100%****** */
+  .h2art {
+    font-size: 5pc;
+  }
+
+  /*Ajuste tabla texto a la der 2 colmna*/
+  .tablacont tr td:nth-of-type(2) {
+    text-align: end;
+  }
 }
