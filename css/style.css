@@ -15,7 +15,7 @@ body {
 /*CABECERA DEL SITIO****************************************************************************** */
 #cabecera {
   background-color: #255538;
-  padding: 5px;
+  padding: 15px;
   margin: 2px;
   border-radius: 10px;
   display: flex;
@@ -56,11 +56,11 @@ body {
 
 #nav1 {
   display: flex;
-  justify-content: center
+  justify-content: flex-end
 }
 
 #list1 {
-  margin-left: auto;
+ /* margin-left: auto; */
   padding: 5px;
   border-radius: 8px;
   display: flex;
@@ -69,21 +69,26 @@ body {
   list-style: none;
 }
 
-.nav1 {
-  background-color: #255538;
-  text-decoration: none;
-  color: aliceblue;
-  padding: 2px;
-  border-radius: 8px;
+.navlia {
   width: 130px;
+  display: inline-block;
+  background-color: #255538;
+  color: white;
+  text-decoration: none;
   text-align: center;
+  border-radius: 10px;
+  padding: 2px;
 }
-a:link,
-a:visited,
-a:active {
+
+.navlia:link,
+.navlia:visited,
+.navlia:active {
   text-decoration: none;
   color: #fafafa;
 }
+
+
+
 
 /*seccion de articulos***************************************************************************** */
 
@@ -124,7 +129,7 @@ article {
 
 #piedepagina {
   background-color: #255538;
-  padding: 5px;
+  padding: 15px;
   margin: 2px;
   border-radius: 10px;
 }
@@ -148,9 +153,12 @@ article {
   }
   /*colocar la navegacion en columna y alargar al 100%****** */
   #list1 {
+    width: 100%;
     flex-direction: column;
   }
-  .nav1 a {
+  
+  .navli .navlia {
+   
     width: 100%;
     text-align: center;
     color: aqua;
