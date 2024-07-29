@@ -190,3 +190,26 @@ article {
     flex-direction: column;
   }
 }
+
+
+
+/*Configuracion del grid don 4 colum****************************************************************************** */
+#contenedorgid {
+    display: grid;
+    height: 100vh; /* Viewport height */
+    margin: 0 100px;
+  
+    grid-template-columns: 1fr 4fr 2fr 1fr;
+    grid-template-rows: 10px 1fr auto auto 100px;
+    grid-template-areas:
+      "libre encabezado encabezado libre"
+    "libre articulo lateral1 libre"
+      "libre articulo lateral2 libre"
+      "libre articulo libre ateral3 libre"
+      "libre footer footer libre";
+    background-color: #f3e5d8;
+  
+    justify-content: center;
+  
+    padding: 50px;
+  }

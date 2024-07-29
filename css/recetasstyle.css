@@ -21,7 +21,7 @@ body {
   margin: 0 100px;
 
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 300px 100px;
+  grid-template-rows: auto auto 100px;
   grid-template-areas:
     "articulo lateral1"
     "articulo lateral2"
@@ -33,12 +33,14 @@ body {
   padding: 50px;
 }
 
+
+
 /*CABECERA DEL SITIO****************************************************************************** */
 #cabecera {
   grid-area:encabezado;
   background-color: #255538;
   padding: 15px;
-  margin: 2px;
+  margin: 0 2px;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -73,6 +75,7 @@ article {
   padding: 20px;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
+  text-align: justify;
 }
 
 .p2 {
@@ -105,6 +108,7 @@ article {
 
   .listaingre {
     padding: 5px;
+    text-align: justify;
   }
 }
 /*Configuracion del lateral derecho medio****************************************************************************** */
